@@ -40,4 +40,5 @@ app.delete('/items/:id', (req, res) => {
   const index = items.findIndex(i=> i.id === id);
   const deleteItem = items.splice(index,1)[0];
   res.json(deleteItem);
+  
 })
